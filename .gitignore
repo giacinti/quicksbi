@@ -5,5 +5,10 @@ pom.xml
 pom.xml.asc
 *.jar
 *.class
+*~
 /.lein-*
 /.nrepl-port
+/out
+.repl
+/resources/public/js
+

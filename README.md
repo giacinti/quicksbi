@@ -1,10 +1,10 @@
 # quicksbi
 
-Quicksbi is not Quick** nor Grisbi
+Quicksbi is not Qu*cken nor Gr*sb*
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 FPhilippe Giacinti
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

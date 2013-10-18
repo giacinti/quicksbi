@@ -1,6 +1,18 @@
-(ns quicksbi.core)
+(ns quicksbi.core
+  (:require [compojure.core :refer [defroutes GET POST]]
+            [compojure.route :refer [resources not-found]]
+            [compojure.handler :refer [site]]
+            [shoreleave.middleware.rpc :refer [wrap-rpc]]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defroutes app-routes
+  (GET "/" [] "<p>Hello from quicksbi</p>")
+  (resources "/")
+  (not-found "Page not found"))
+
+(def handler
+  (site app-routes))
+
+(def app (-> (var handler)
+             (wrap-rpc)
+             (site)))
+
