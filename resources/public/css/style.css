@@ -132,6 +132,14 @@ input.default {
 .help {
     color: red;
 }
+
+.positive_value {
+    color: green;
+}
+
+.negative_value {
+    color: red;
+}
 /*
 :invalid {
 	color:red;
